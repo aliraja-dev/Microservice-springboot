@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         log.info(" Employee found with id: {}", employee);
 
         Department department = restTemplate
-                .getForObject("http://localhost:9001/department/" + employee.getDepartmentId(), Department.class);
+                .getForObject("http://DEPARTMENT-SERVICE/department/" + employee.getDepartmentId(), Department.class);
         response.setDepartment(department);
         response.setEmployee(employee);
         return response;
