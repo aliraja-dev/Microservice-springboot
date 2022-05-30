@@ -1,0 +1,6 @@
+com/alirajadev/department/DepartmentServiceApplication.class
+com/alirajadev/department/repository/DepartmentRepository.class
+com/alirajadev/department/service/DepartmentService.class
+com/alirajadev/department/service/DepartmentServiceImpl.class
+com/alirajadev/department/entity/Department.class
+com/alirajadev/department/controller/DepartmentController.class
