@@ -1,2 +1,14 @@
 server:
   port: 9001
+spring:
+  application:
+    name: DEPARTMENT_SERVICE
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+# Eureka Service Registry Port is 8761, added above to default zone
