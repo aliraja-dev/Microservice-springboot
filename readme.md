@@ -5,6 +5,11 @@ Creating two Micro services for Employee and Departments on Port 9002 & 9001
 Setting up a Service Registry using Eureka Server
 Listening at Port 8761
 
+## Project Backlog
+
+Implement Resilience 4j CircuitBreaker, Retry and Rate Limiter
+Deploy using Docker and kubernetes
+
 ### Microservices Architecture
 
 ![homepage](images/microservices-architecture.png)
