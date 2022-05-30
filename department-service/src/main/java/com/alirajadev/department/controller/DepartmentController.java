@@ -25,7 +25,6 @@ public class DepartmentController {
     @PostMapping("/")
     public Department saveDepartment(@RequestBody Department department) {
         log.info("Department saved successfully " + department.toString());
-        // TODO: process POST request
         return departmentService.saveDepartment(department);
     }
 
