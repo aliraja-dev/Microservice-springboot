@@ -3,15 +3,9 @@ server:
 spring:
   application:
     name: DEPARTMENT-SERVICE
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-# Eureka Service Registry Port is 8761, added above to default zone
+  config:
+    import: optional:configserver:http://myconfigserver.com
+# Eureka Service Registry Port is picked thru config server added to bootstrap.yml which points to the github repo to pick the service registry uri
 
 management:
   health:

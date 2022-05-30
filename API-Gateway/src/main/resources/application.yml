@@ -1,19 +1,11 @@
 server:
   port: 9191
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-# Eureka Service Registry Port is 8761, added above to default zone
-
 spring:
   application:
     name: API-GATEWAY
+  config:
+    import: optional:configserver:http://myconfigserver.com
   cloud:
     gateway:
       routes:
@@ -25,3 +17,5 @@ spring:
           uri: lb://DEPARTMENT-SERVICE
           predicates:
             - Path=/department/**
+    config:
+      enabled: true
