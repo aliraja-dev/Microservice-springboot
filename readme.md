@@ -9,6 +9,7 @@ Listening at Port 8761
 
 Implement Resilience 4j CircuitBreaker, Retry and Rate Limiter
 Deploy using Docker and kubernetes
+Add docker File and make container
 
 ### Microservices Architecture
 
